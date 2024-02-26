@@ -42,7 +42,7 @@ public class SubmarineController {
 	public String submarineRegisteredSuccessfully(Model model, String name) {
 
 		model.addAttribute("message", "SubMarine" + name + "successully registered");
-		return "subMarine.jsp";
+		return "redirect:/submarinelist";
 	}
 
 	public String displayHiddenSubMarineControls(Model model, String name) {
@@ -59,7 +59,7 @@ public class SubmarineController {
 				break;
 			}
 		}
-		return "subMarine.jsp";
+		return "redirect:/submarinelist";
 	}
 
 	public void removeSubMarineFromList(String name) {
